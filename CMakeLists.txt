@@ -15,7 +15,7 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(Catch2)
 
-add_executable(hello_test tests/hello_test.cpp src/hello.cpp)
-add_executable(main main.cpp src/hello.cpp)
+add_executable(string_compare_test tests/string_compare_test.cpp src/string_compare.cpp src/string_to_ascii.cpp)
+add_executable(main main.cpp src/string_compare.cpp src/string_to_ascii.cpp)
 
-target_link_libraries(hello_test PRIVATE Catch2::Catch2WithMain)
+target_link_libraries(string_compare_test PRIVATE Catch2::Catch2WithMain)
