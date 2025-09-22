@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 
-int string_to_ascii(std::string str);
+int string_to_ascii(const std::string& str);

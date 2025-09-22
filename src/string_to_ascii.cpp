@@ -1,17 +1,17 @@
 #include "string_to_ascii.hpp"
 
-int string_to_ascii(std::string str) {
+int string_to_ascii(const std::string& str) {
 
     int ascii_value{0};
 
-    for (std::size_t i = 0; i < str.size(); i++) {
+    for (const char i : str) {
       // convert uppercase letters to lowercase
-      if (str[i] >= 65 && str[i] <= 90) {
-         ascii_value += str[i] + 32;
+      if (i >= 65 && i <= 90) {
+         ascii_value += i + 32;
       }
       // add the ASCII value of the lowercase character
       else {
-         ascii_value += str[i];
+         ascii_value += i;
       }
    }
 
