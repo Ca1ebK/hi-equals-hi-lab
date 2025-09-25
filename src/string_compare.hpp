@@ -1,4 +1,4 @@
 #pragma once
 #include <string>
 
-int string_compare(std::string str1, std::string str2);
+int string_compare(const std::string& str1, std::string str2);
